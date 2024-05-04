@@ -1,4 +1,4 @@
-import Moon from "../assets/moon.png"
+import Moon from "../assets/icons/moon.png"
 function ToggleBtn(prop:any) {
   return (
     <div>
