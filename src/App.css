@@ -64,7 +64,7 @@ nav .logo-container img{
 }
 
 
-
+/* ------------------------togglle btn----------------------------- */
 .switch input {
     top: 0;
     right: 0;
@@ -137,4 +137,76 @@ nav .logo-container img{
   left: auto;
   left: 52%;  
   transition: all 0.5s ease;
+}
+
+/* -------------------------------contents-------------------------- */
+
+.home-contents{
+  display: flex;
+  flex-direction: row;
+
+}
+.home-contents .left-side{
+  width: 50vw;
+  color: white;
+  /* background-color: red;  */
+  height: 68vh;
+  display: flex;
+  align-items: center;
+  padding-left: 110px;
+}
+
+.left-side .wrapper{
+  width: 470px;
+  height: 330px;
+  /* background-color: green;   */
+}
+.left-side h1{
+  font-size: 150px;
+  height: 50%;
+  letter-spacing: 3px;
+}
+.left-side h1 span{
+font-size: 70px;
+}
+.left-side .wrapper p{
+  padding: 20px 10px;
+  font-size: 15px;
+  letter-spacing: .05em;
+  font-weight: 200;
+}
+.left-side .actions{
+  display: flex;
+  gap: 16px;
+  padding: 0 10px;
+  align-items: center;
+}
+.left-side .actions button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.left-side .actions button img{
+width: 31px;
+height: 31px;
+}
+.left-side .actions a:last-child button {
+  background-color: white;
+padding: 8px 22px;
+font-weight: 600;
+border-radius: 30px;
+margin-left: 5px;
+}
+.right-side{
+  display: flex;
+  /* background-color: red; */
+  height: 85vh;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+.right-side img{
+  width: 900px;
 }
