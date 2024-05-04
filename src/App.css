@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --blue: #46b4f2;
+  --light-black: #404040;
+}
+#id{
+  background-color: transparent;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#home {
+  height: 100vh;
+}
+
+#home .bg-text {
+  position: fixed;
+  font-size: 520px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+ top: -30px;
+ left: -200px;
+ line-height: 100vh;
+ width: 125vw;
+ background-color: black;
+ z-index: -100;
+}
+
+#home .bg-text p {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 50vh;
+  letter-spacing: 0.06em;
+  color: #ffffff3c;
+
+}
+#home .bg-text p:last-child{
+left: -160px;
+}
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 18px;
+}
+nav .logo-container{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+}
+nav .logo-container img{
+  width: 40px;
+}
+
+
+
+.switch input {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  width: 162px;
+  height: 58px;
+  position: relative;
+  scale: 1.2;
+
+
+}
+
+.switch label {
+  display: block;
+  width:32%;
+  height: 42.5%;
+  position: relative;
+  background: black;
+  border-radius: 30px 30px 30px 30px;
+  transition: all 0.5s ease;
+  top: 20px;
+  left: 80px;
+  box-sizing: content-box;
+  border: 1px solid  #ffffff3c;
+}
+
+.switch input ~ label i {
+  display: block;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  z-index: 2;
+  border-radius: inherit;
+  background:white;
+  transition: all 0.5s ease;
+}
+
+
+.moon {
+  position: absolute;
+  z-index: 6;
+  top: -20px;
+  left: 4px;
+  /* transform: rotate(deg); */
+  font-size: 35px;
+  color: white;  
+}
+.moon img{
+  width: 15px;
+  transition: all 0.5s ease
+}
+.switch input:checked ~ label i {
+  left: auto;
+  left: 52%;  
+  transition: all 0.5s ease;
+}
