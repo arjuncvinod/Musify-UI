@@ -1,6 +1,11 @@
 import { Link as ScrollLink } from 'react-scroll';
-import ellipse from "../assets/icons/Ellipse.png"
-const ScrollNavLink = ({ to, children}) => (
+import ellipse from "../assets/icons/Ellipse.png";
+
+type ScrollNavLinkProps = {
+  to: string;
+};
+
+const ScrollNavLink: React.FC<ScrollNavLinkProps> = ({ to }) => (
   <ScrollLink
     activeClass="active"
     to={to}
