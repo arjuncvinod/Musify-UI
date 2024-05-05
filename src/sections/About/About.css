@@ -1,0 +1,80 @@
+#about{
+    background-color: black;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+#about .top{
+    display: flex;
+    justify-content: end;
+    height: 50vh;
+    align-items: center;
+    padding-right: 100px;
+    /* background-color: green; */
+    position: relative;
+}
+#about .top .content{
+    width: 50vw;
+    height: 320px;
+    /* width: 900px; */
+    font-weight: 400;
+    font-size: 18px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    
+}
+
+.scroll-text1{
+    background-color: white;
+    color: black;
+    height: 70px;
+    display:flex ;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+    left: -70px;
+    top: 70px;
+    transform: rotate(-30deg);
+    width: 700px;
+
+}
+.scroll-text2{
+    background-color: var(--light-black);
+    color: white;
+    height: 70px;
+    display:flex ;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+    left: -130px;
+    top: 420px; 
+    transform: rotate(25deg);
+    width: 1700px;
+
+}
+
+.about-text{
+    position: fixed;
+    right: 550px;    
+    top: -100px; 
+    /* transform: rotate(25deg); */
+    font-size: 80px;
+    color: white;
+    text-transform:none;
+
+}
+#about .bottom{
+    /* background-color: red; */
+    padding-left: 50px;
+    position: relative;
+    transform: translateY(-80px);
+}
+#about .bottom img{
+    width: 200px;
+}
