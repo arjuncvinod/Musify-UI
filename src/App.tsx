@@ -1,12 +1,13 @@
-import Home from "./sections/Home"
-import "./App.css"
+import Home from "./sections/Home/Home";
+import "./App.css";
+import Media from "./sections/Media/Media";
 function App() {
-
   return (
     <>
-     <Home />
+      <Home />
+      <Media />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

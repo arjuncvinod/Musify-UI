@@ -1,0 +1,225 @@
+#home {
+    height: 100vh;
+  }
+  
+  #home .bg-text {
+    position: fixed;
+    font-size: 520px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+   top: -30px;
+   left: -200px;
+   line-height: 100vh;
+   width: 125vw;
+   background-color: black;
+   z-index: -100;
+  }
+  
+  #home .bg-text p {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 50vh;
+    letter-spacing: 0.06em;
+    color: #ffffff3c;
+  
+  }
+  #home .bg-text p:last-child{
+  left: -160px;
+  }
+  
+  nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 18px;
+    height: 100px;
+  }
+  nav .logo-container{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+  }
+  nav .logo-container img{
+    width: 34px;
+  }
+  
+  
+  /* ------------------------togglle btn----------------------------- */
+  .switch input {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch {
+    width: 162px;
+    height: 58px;
+    position: relative;
+    scale: 1.2;
+  
+  
+  }
+  
+  .switch label {
+    display: block;
+    width:32%;
+    height: 42.5%;
+    position: relative;
+    background: black;
+    border-radius: 30px 30px 30px 30px;
+    transition: all 0.5s ease;
+    top: 20px;
+    left: 95px;
+    box-sizing: content-box;
+    border: 1px solid  #ffffff3c;
+  }
+  
+  .switch input ~ label i {
+    display: block;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    z-index: 2;
+    border-radius: inherit;
+    background:white;
+    transition: all 0.5s ease;
+  }
+  
+  
+  .moon {
+    position: absolute;
+    z-index: 6;
+    top: -20px;
+    left: 4px;
+    /* transform: rotate(deg); */
+    font-size: 35px;
+    color: white;  
+  }
+  .moon img{
+    width: 15px;
+    transition: all 0.5s ease
+  }
+  .switch input:checked ~ label i {
+    left: auto;
+    left: 52%;  
+    transition: all 0.5s ease;
+  }
+  
+  /* -------------------------------contents-------------------------- */
+  
+  .home-contents{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .home-contents .left-side{
+    width: 50vw;
+    color: white;
+    /* background-color: red;  */
+    height: 68vh;
+    display: flex;
+    align-items: center;
+    padding-left: 110px;
+  }
+  
+  .left-side .wrapper{
+    width: 470px;
+    height: 330px;
+    /* background-color: green;   */
+  }
+  .left-side h1{
+    font-size: 150px;
+    height: 50%;
+    letter-spacing: 3px;
+  }
+  .left-side h1 span{
+  font-size: 70px;
+  }
+  .left-side .wrapper p{
+    padding: 20px 10px;
+    font-size: 15px;
+    letter-spacing: .05em;
+    font-weight: 200;
+  }
+  .left-side .actions{
+    display: flex;
+    gap: 16px;
+    padding: 0 10px;
+    align-items: center;
+  }
+  .left-side .actions button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .left-side .actions button img{
+  width: 31px;
+  height: 31px;
+  }
+  .left-side .actions a:last-child button {
+    background-color: white;
+  padding: 8px 22px;
+  font-weight: 600;
+  border-radius: 30px;
+  margin-left: 5px;
+  }
+  .right-side{
+    display: flex;
+    /* background-color: red; */
+    height: 86vh;
+    align-items:center;
+    overflow: hidden;
+    justify-content: flex-end;
+  }
+  .right-side img{
+    width: 900px;
+  }
+  
+  
+  /* --------------navigator------------- */
+  
+  .navigator{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: fixed;
+    right: 40px;
+  }
+  .navigator img{
+    width: 16px;
+  }
+  .navigator button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: .05s ease-in;
+  }
+  
+  .active button{
+    background-color:white;
+  }
