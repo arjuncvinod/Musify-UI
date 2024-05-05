@@ -1,5 +1,6 @@
 #home {
     height: 100vh;
+    overflow: hidden;
   }
   
   #home .bg-text {
@@ -16,6 +17,7 @@
    width: 125vw;
    background-color: black;
    z-index: -100;
+   /* height: 100vh; */
   }
   
   #home .bg-text p {
@@ -205,6 +207,7 @@
     gap: 16px;
     position: fixed;
     right: 40px;
+    z-index: 1000;
   }
   .navigator img{
     width: 16px;

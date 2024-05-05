@@ -1,4 +1,3 @@
-import { useState } from "react";
 import logo from "../../assets/icons/logo.png";
 import windows from "../../assets/icons/windows.png";
 import apple from "../../assets/icons/apple.png";
@@ -8,10 +7,11 @@ import ScrollNavLink from "../../components/ScrollNavLink";
 import ToggleBtn from "../../components/ToggleBtn";
 import { Element } from "react-scroll";
 import "./Home.css"
+import { useTheme } from "../../contexts/ThemeContext";
+
 
 function Home() {
-  const [dark, setDark] = useState(true);
-
+  const { dark, setDark } = useTheme();
   const changeTheme = () => {
     setDark((prev) => !prev);
   };
@@ -30,12 +30,13 @@ function Home() {
           <img src={logo} alt="" />
           <h3>Musify</h3>
         </div>
-        <ToggleBtn toggle={changeTheme} setTheme={dark} />
+    <ToggleBtn toggle={changeTheme} setTheme={dark} />
+
       </nav>
 
       <div className="navigator">
         <ScrollNavLink to="home" />
-        <ScrollNavLink to="about" />
+        <ScrollNavLink to="media" />
         <ScrollNavLink to="contact" />
         <ScrollNavLink to="signup" />
       </div>

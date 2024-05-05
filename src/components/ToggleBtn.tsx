@@ -10,8 +10,11 @@ const ToggleBtn: React.FC<ToggleBtnProps> = ({ setTheme, toggle }) => (
   <div>
     <div className="switch">
       <input type="checkbox" name="toggle" onChange={toggle} />
-      <label htmlFor="toggle" style={setTheme ? { backgroundColor: "black" } : { backgroundColor: "white" }}>
-        <i style={setTheme ? { backgroundColor: "white" } : { backgroundColor: "black" }}>
+      <label
+        htmlFor="toggle"
+        style={{ backgroundColor: setTheme ? "black" : "white" }}
+      >
+        <i style={{ backgroundColor: setTheme ? "white" : "black" }}>
           <div className="moon">
             <img alt="" src={setTheme ? Moon : Sun} />
           </div>

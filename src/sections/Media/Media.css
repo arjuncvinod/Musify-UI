@@ -1,0 +1,122 @@
+#media{
+    background-color: black;
+    background-image: url(../../assets/media-bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 40%;
+}
+#media{
+    display: flex;
+    flex-direction: column;
+}
+#media .row{
+/* height: 33vh; */
+padding-left:120px;
+color: white;
+}
+.row1{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    /* padding-left:120px ; */
+    height: 27vh;
+}
+.cards-container{
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+    position: relative;
+}
+.media-card{
+    width: 180px;
+    height: 205px;
+    background-color: var(--light-black);
+    border-radius: 10px;
+}
+.media-card img{
+    width: 180px;
+}
+.media-card h1 ,.media-card p{
+    font-size: 11px;
+    font-weight: 400;
+    color: inherit;
+}
+.media-card a{
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+}
+.media-card a span{
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+.media-card .contents{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 14px;
+}
+.row2{
+    /* background-color: rgb(17, 0, 255); */
+    height: 36vh;
+}
+.row h3{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 6px;
+    margin-left: 5px;
+    font-size: 18px;
+
+}
+.row3{
+    /* background-color: rgb(153, 255, 0); */
+    height: 36vh;
+}
+.container {
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  .cards-container {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    scroll-behavior: smooth;
+  }
+  
+  .cards-container::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .scroll-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0px; 
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1; 
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 120px;
+
+  }
+  .scroll-arrow span{
+    background-color: white;
+    border-radius: 50%;
+    opacity: 2;
+  }
+  
+  .scroll-arrow:focus {
+    outline: none;
+  }
