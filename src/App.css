@@ -52,15 +52,16 @@ nav{
   justify-content: space-between;
   background-color: transparent;
   padding: 18px;
+  height: 100px;
 }
 nav .logo-container{
   display: flex;
   align-items: center;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 nav .logo-container img{
-  width: 40px;
+  width: 34px;
 }
 
 
@@ -101,7 +102,7 @@ nav .logo-container img{
   border-radius: 30px 30px 30px 30px;
   transition: all 0.5s ease;
   top: 20px;
-  left: 80px;
+  left: 95px;
   box-sizing: content-box;
   border: 1px solid  #ffffff3c;
 }
@@ -201,12 +202,43 @@ margin-left: 5px;
 .right-side{
   display: flex;
   /* background-color: red; */
-  height: 85vh;
-  width: 100%;
-  align-items: center;
+  height: 86vh;
+  align-items:center;
   overflow: hidden;
   justify-content: flex-end;
 }
 .right-side img{
   width: 900px;
+}
+
+
+/* --------------navigator------------- */
+
+.navigator{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: fixed;
+  right: 40px;
+}
+.navigator img{
+  width: 16px;
+}
+.navigator button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  transition: .05s ease-in;
+}
+
+.active button{
+  background-color:white;
+}
+
+.section{
+  height: 100vh;
 }
