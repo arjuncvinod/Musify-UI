@@ -10,22 +10,18 @@
     height: 50vh;
     align-items: center;
     padding-right: 100px;
-    /* background-color: green; */
     position: relative;
 }
 #about .top .content{
     width: 50vw;
     height: 320px;
-    /* width: 900px; */
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     text-align: start;
     display: flex;
     align-items: center;
-    /* background-color: red; */
-    
+    padding-left: 40px;
 }
-
 .scroll-text1{
     background-color: white;
     color: black;
@@ -40,7 +36,6 @@
     top: 70px;
     transform: rotate(-30deg);
     width: 700px;
-
 }
 .scroll-text2{
     background-color: var(--light-black);
@@ -56,21 +51,16 @@
     top: 420px; 
     transform: rotate(25deg);
     width: 1700px;
-
 }
-
 .about-text{
     position: fixed;
     right: 550px;    
     top: -100px; 
-    /* transform: rotate(25deg); */
     font-size: 80px;
     color: white;
     text-transform:none;
-
 }
 #about .bottom{
-    /* background-color: red; */
     padding-left: 50px;
     position: relative;
     transform: translateY(-80px);
