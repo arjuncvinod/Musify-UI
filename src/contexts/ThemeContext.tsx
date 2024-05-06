@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 interface ThemeContextType {
   dark: boolean;
@@ -7,7 +7,11 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export const ThemeProvider: React.FC = ({ children}) => {
+interface ThemeProviderProps {
+  children: ReactNode; 
+}
+
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [dark, setDark] = useState(true);
 
   return (

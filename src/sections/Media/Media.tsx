@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef, RefObject } from "react";
 import { Element } from "react-scroll";
 import "./Media.css";
 import MediaCard from "../../components/MediaCard";
@@ -11,19 +11,19 @@ function Media() {
     return dark ? "black" : "var(--blue)";
   }
 
-  const cardsContainerRef1 = useRef(null); 
-  const cardsContainerRef2 = useRef(null); 
+  const cardsContainerRef1: RefObject<HTMLDivElement> = useRef(null); // Specify the type of the ref
+  const cardsContainerRef2: RefObject<HTMLDivElement> = useRef(null); // Specify the type of the ref
 
   const handleScrollArrowClick1 = () => {
     if (cardsContainerRef1.current) {
-      const scrollAmount = 220; 
-      cardsContainerRef1.current.scrollLeft += scrollAmount; 
+      const scrollAmount = 220;
+      cardsContainerRef1.current.scrollLeft += scrollAmount;
     }
   };
   const handleScrollArrowClick2 = () => {
     if (cardsContainerRef2.current) {
-      const scrollAmount = 220; 
-      cardsContainerRef2.current.scrollLeft += scrollAmount; 
+      const scrollAmount = 220;
+      cardsContainerRef2.current.scrollLeft += scrollAmount;
     }
   };
 
