@@ -4,6 +4,7 @@ import Home from "./sections/Home/Home";
 import Media from "./sections/Media/Media";
 import About from "./sections/About/About";
 import Contact from "./sections/Contact/Contact";
+import Signup from './sections/Signup/Signup';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Media />
       <About />
       <Contact />
+      <Signup />
     </ThemeProvider>
   );
 }

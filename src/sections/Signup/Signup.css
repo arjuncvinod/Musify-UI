@@ -1,0 +1,143 @@
+#signup{
+    height: 100vh;
+}
+#signup h1{
+    color: white;
+    padding: 0 15vw;
+    font-weight: 700;
+    font-size: 80px;
+}
+.signup-content{
+    height: calc(100vh - 120px);
+    display: flex;
+}
+.signup-content .left{
+    height: 100%;
+    width: 50%;
+    padding-left: 15vw;
+}
+.signup-content .right{
+    height: 100%;
+    width: 50%;
+}
+#signup .form-container{
+    background-color: var(--light-black);
+    height: calc(100vh - 120px);
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px -4px 30px rgba(8, 8, 8, 0.25); 
+    z-index: 4;
+    position: absolute;
+    width: 34.8%;
+    max-height: 630px;
+}
+#signup .form-container .img-container{
+    width:8vw;
+    height: 8vw;
+    border-radius: 50%;
+    display: grid;
+    place-items: center; 
+    padding-left: 1.25vw;
+    padding-bottom: .625vw;
+    margin: 20px 0;
+}
+.form-container .img-container img{
+    width: 5vw;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    gap:8px
+}
+.dark-form input{
+    background-color:rgba(0, 0, 0, 0.3);
+}
+.light-form input{
+    background-color:rgba(70, 180, 242 , 0.3);
+}
+.form-container form input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+.form-container form label{
+    width: 100%;
+    font-size: 16px;
+}
+.form-container form button{
+    margin-top: 30px;
+    height: 34px;
+    width: 100px    ;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.signup-content hr{
+    margin: 30px 0;
+    width: calc(100% - 10vw);
+    border-color: var(--blue);
+}
+.gsign-btn{
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 12px;
+    width: 170px;
+}
+.gsign-btn img{
+    width: 25px;
+    height: 25px;
+}
+.signup-content .right{
+    display: flex;
+    flex-direction: row;
+}
+.col1{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    width: 210px;
+}
+.col1 img{
+    height: 550px;
+    position: absolute;
+    transform: translateX(-90px);
+}
+.col2{
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.col2 .notsign-txt{
+    -webkit-text-stroke:2px white;
+    font-size: 72px;
+    display: flex;
+    line-height: 60px;
+    font-weight: 900;
+    color: transparent;
+    margin-top: 80px;
+}
+.col2 img{
+    position: absolute;
+    top: -60px;
+    left: -40px;
+    width: 175px;
+}
