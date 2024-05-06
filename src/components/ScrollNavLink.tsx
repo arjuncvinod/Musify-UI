@@ -11,7 +11,7 @@ const ScrollNavLink: React.FC<ScrollNavLinkProps> = ({ to }) => (
     to={to}
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={0}
     duration={500}
   >
     <button>
