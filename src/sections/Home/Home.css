@@ -222,6 +222,9 @@
     cursor: pointer;
     transition: .05s ease-in;
   }
+  .navigator button:active{
+    background-color: white;
+  }
   
   .active button{
     background-color:white;
