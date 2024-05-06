@@ -1,8 +1,9 @@
-import Home from "./sections/Home/Home";
-import "./App.css";
-import Media from "./sections/Media/Media";
 import { ThemeProvider } from './contexts/ThemeContext';
+import "./App.css";
+import Home from "./sections/Home/Home";
+import Media from "./sections/Media/Media";
 import About from "./sections/About/About";
+import Contact from "./sections/Contact/Contact";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <Media />
       <About />
+      <Contact />
     </ThemeProvider>
   );
 }

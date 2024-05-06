@@ -1,0 +1,114 @@
+#contact{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+
+}
+
+.inner-bg{
+    width: 70vw;
+    height: 75vh;
+    background-color: rgba(255, 255, 255, 0.251);
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    z-index: -.5;
+}
+#contact .bg-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    font-size: 15.5vw;
+    font-weight: 800;
+    gap: 5px;
+    z-index: 0;
+}
+#contact .bg-text p{
+    display: block;
+    /* background-color: red; */
+    padding: 0;
+    line-height: 15.5vw;
+    letter-spacing: 10px;
+    color: transparent;
+  /* -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);  */
+  /* -webkit-text-stroke: 2px rgba(70, 180, 242,.3);  */
+  /* -webkit-text-stroke: 2px rgba(235, 237, 238, 0.884);  */
+  z-index: 0;
+}
+.blue-stroke{
+    /* -webkit-text-stroke: 2px rgba(70, 180, 242,.3);  */
+    /* text-shadow: 0px 0px 1px white; */
+    -webkit-text-stroke: 2px rgba(184, 224, 245, 0.884);
+}
+.black-stroke{
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+}
+.inner-bg .left{
+    /* background-color: red; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 3%;
+    position: relative;
+}
+.contact-form{
+    width: 80%;
+    height: 50%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    /* padding-left: 0%; */
+    position: absolute;
+    z-index: 100;
+    /* background-color: red; */
+}
+.contact-form textarea{
+height: 100%;
+/* background-color: rgba(0, 0, 0, 0.3); */
+border-radius: 10px;
+border: none;
+outline: none;
+resize: none;
+padding: 8px;
+}
+.contact-form input{
+/* background-color: rgba(0, 0, 0, 0.3); */
+border-radius: 10px;
+border: none;
+outline: none;
+height: 60px;
+padding: 8px;
+z-index: 4;
+}
+.dark-input{
+   background-color:rgba(0, 0, 0, 0.3);
+}
+.light-input{
+    background-color:rgba(70, 180, 242 , 0.3);
+}
+
+.dark-input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .light-input::placeholder {
+    color: rgba(0, 0, 0, 0.3); /* Placeholder color for light mode */
+  }
+
+.inner-bg .right{
+    display: grid;
+    place-items: center;
+    padding-left: 1vw;
+    /* position: absolute; */
+    padding-bottom: 8px;
+}
+.inner-bg .right img{
+    width: 27.7vw;
+    z-index: 2;
+}
