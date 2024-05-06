@@ -37,7 +37,7 @@ function Home() {
       <div className="navigator">
         <ScrollNavLink to="home" />
         <ScrollNavLink to="media" />
-        <ScrollNavLink to="" />
+        <ScrollNavLink to="about" />
         <ScrollNavLink to="contact" />
         <ScrollNavLink to="signup" />
       </div>
