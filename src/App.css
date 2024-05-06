@@ -14,3 +14,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+@media screen and (max-width: 1000px) {
+  #root {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .responsive-text{
+    display: none;
+  }
+}
